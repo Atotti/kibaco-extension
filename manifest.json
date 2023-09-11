@@ -1,0 +1,17 @@
+{
+    "name": "kobaco-advance1.0.0",
+    "author": "@aya172957",
+    "description": "chrome extension for customize JS.",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "web_accessible_resources": ["*"],
+    "permissions": ["storage"],
+    "content_scripts": [
+      {
+        "run_at":"document_end",
+        "all_frames": true,
+        "matches": ["https://kibaco.tmu.ac.jp/portal/*"],
+        "js":["jQuery.min.js","hide.js"]
+      }
+    ]
+  }
